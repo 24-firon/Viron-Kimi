@@ -1,0 +1,50 @@
+{
+  "name": "viron-kimi",
+  "version": "0.1.0",
+  "description": "CLI-based development environment for managing full-stack projects",
+  "main": "bin/cli.js",
+  "bin": {
+    "kimi": "bin/cli.js"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node bin/cli.js",
+    "test": "vitest",
+    "test:unit": "vitest run",
+    "lint": "eslint src/**/*.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "cli",
+    "scaffolding",
+    "templates",
+    "full-stack",
+    "development-environment"
+  ],
+  "author": "Viron",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "ejs": "^3.1.9",
+    "yaml": "^2.3.4",
+    "zod": "^3.22.4",
+    "chalk": "^5.3.0",
+    "ora": "^8.0.1",
+    "inquirer": "^9.2.12"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/ejs": "^3.1.5",
+    "@types/inquirer": "^9.0.7",
+    "typescript": "^5.3.2",
+    "tsx": "^4.7.0",
+    "vitest": "^1.1.0",
+    "eslint": "^8.55.0",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
